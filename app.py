@@ -55,7 +55,7 @@ def search_users_in_database(first_name):
     users = fetch_users_by_first_name(first_name)
     if users:
         # Manually serialize the data using json.dumps to preserve key order
-        users_json = json.dumps(users, indent=2)  # You can adjust the indent value for formatting
+        users_json = json.dumps(users, indent=2)  # Aadjust the indent value for formatting
         response = app.response_class(
             response=users_json,
             status=200,
